@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            padding: 40px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        input{
+            width: 100%;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin:5px 0px 10px 0px;
+            padding-left: 10px;
+        }
+        .btn{
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: hotpink;
+            color: white;
+        }
+        .btn:hover{
+            background-color: rgb(250, 28, 139);
+        }
+        .kapsayıcı{
+            position: relative;
+        }
+        .konumlandır{
+            position: absolute;
+            right: 10px;
+            bottom: 16px;
+        }
+        .label-konum{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transition: 1s all;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <div>
+                <label for="username">Kullanıcı adı:</label>
+                <input type="text" id="username">
+            </div>
+        
+            <div class="kapsayıcı">
+                <label class="label-konum" id="label" for="password">Şifre:</label>
+                <input type="password" id="password">
+                <i class="konumlandır fa-solid fa-eye"></i>
+            </div>
+            <button class="btn">Giriş yap</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7d2e02da13.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
